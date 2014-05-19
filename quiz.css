@@ -1,0 +1,164 @@
+#quizcontainer {
+width:550px;
+height:400px;
+background:#A6C5E1;
+position: relative;
+}
+
+.choicebtn {
+height: 28px;
+background: url('./images/buttonbackground.png');
+display: block;
+position:relative;
+width: 70%;
+padding-top: 2px;
+text-align: center;
+border-radius: 10px;
+font-family: 'cooper black', Coustard, serif;
+font-size: 18px;
+cursor:pointer;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.choicebtn.wide {
+width:90%;
+}
+
+.choicebtn:hover {
+background: url('./images/buttonbackgroundover.png');
+}
+
+.choicebtn:active {
+background: url('./images/buttonbackgrounddown.png');
+}
+
+.choicebtn.wrong {
+background: url('./images/buttonbackgroundwrong.png');
+}
+
+.choicebtn.right {
+background: url('./images/buttonbackgroundright.png');
+}
+
+.wrongimage {
+position: absolute;
+top: -5px;
+left: 45%;
+width: 40px; 
+}
+
+.rightnumber {
+position: absolute;
+font-size: 40px;
+color: #FFF;
+left: 87%;
+top: -64px;
+display: none;
+text-shadow: 3px 2px 9px rgba(0, 0, 0, 0.71);
+z-index: 999;
+}
+
+.questiontext {
+font-size: 22px;
+padding: 60px 50px 20px;
+font-family:'cooper black', Coustard, serif;
+margin:0px;
+}
+.sideimage {
+width:50%;
+height:350px;
+float:right;
+margin-right:10px;
+margin-top:10px;
+}
+
+.sideimage img {
+width:100%;
+}
+
+.maincontent {
+width:100%;
+}
+
+.sideimage + .maincontent {
+width:48%;
+float:left;
+}
+
+.sideimage + .maincontent .choicebtn {
+width:80%;
+}
+
+.sideimage + .maincontent .questiontext {
+padding:20px;
+}
+
+
+.sideimage + .maincontent .choicebtn.wide {
+width:90%;	
+}
+
+#clickblock {
+width: 550px;
+height: 400px;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 9999999;
+}
+
+#winscreen {
+width: 550px;
+height: 400px;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 9999999;
+display:none;
+}
+
+#winscreen h2 {
+font-family: 'cooper black', Coustard, serif;
+text-align: center;
+margin-top: 20px;
+font-size: 50px;
+margin-bottom: 0px;
+}
+
+#winscreen h1 {
+font-size: 60px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-family: 'cooper black', Coustard, serif;
+text-align: center;
+}
+
+#pointsdisplay {
+color:#0167ff;
+}
+
+#ratingdisplay {
+color:#cd01cd;
+}
+
+#tryagain {
+background: #9cd9f6;
+display: block;
+text-align: center;
+width: 40%;
+margin-left: auto;
+margin-right: auto;
+font-family: 'cooper black', Coustard, serif;
+font-size: 35px;
+padding: 10px 0px;
+border-radius: 25px;
+margin-top: 20px;
+cursor:pointer;
+}
+
+#tryagain:hover {
+background:#f1f13f;
+}
